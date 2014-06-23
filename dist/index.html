@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>test</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css"/>
+
+    <link rel="stylesheet" href="styles/main.css"/>
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+ <div class="header">
+      </div>
+
+      <header>
+        <div class="headerleft">
+        </div>
+        
+        <div class="headerRight">
+
+        </div>
+      </header>
+
+        <div class="containter">
+
+          <div class="containerLeft">
+            <div id="sidebar"></div>
+              
+          </div>
+
+          <div class="containerRight">
+
+            <div class="crc">
+
+              <div id="sidebar2"></div>
+           
+          </div>
+            </div>
+          </div>
+
+         </div>
+
+      <footer>
+        <div class="email_link">
+
+        </div>
+
+        <div class="footerRight">
+
+        </div>
+      </footer>
+
+ 
+    <script type="text/template" id="sidebar_template">
+                <img src="<%= avatar_url %>" alt="<% name %>"/>
+                <div class="name"><%= login %></div>
+                <div class="followers">Followers: <%= followers %></div>
+                <div class="following">Following: <%= following %></div>
+              </script>
+              
+             <script type="text/template" id="sidebar2_template">
+                <div class="repo"><%= name %></div>
+
+              </script>
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/secret.js"></script>
+        <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+
+@import 'bourbon/bourbon';
+
+
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333; }
+
+//change header soon, when tweaking
+.header {
+  background-color: rgb(245, 245, 245); 
+  width: 100%;
+  height: auto;
+  //border: 1px solid red;
+  margin: 0 auto;
+}
+
+.headercontent {
+  width: 1000px;
+  height: 60px;;
+  padding: 0;
+  border: 2px solid black;
+  margin: 0 auto;
+
+}
+
+.headerLeft {
+  border:1px solid red;
+  width: 510px;
+  height: 40px;
+ // border: 1px solid red;
+  float: left;
+}
+
+.headerLeftNav {
+  float: left;
+  list-style: none;
+    li {
+      float: left;
+      padding-left: 10px;
+    }   
+        a {
+          text-decoration: none;
+        }
+}
+.headerRight {
+  width: 410px;
+  height: 40px;
+  float: right;
+}
+
+#header {
+  width: 110px;
+  float: right;
+  padding-top: 12px;
+}
+
+.avatar2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.name2 {
+  float: right;
+}
+
+.headerNav {
+  float: right;
+  padding: 18px 8px 0px 0px;
+}
+
+.container {
+  padding-top: 25px;
+  width: 1000px;
+  height: 670px;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+
+.containerLeft {
+  float: left;
+  border: 3px solid pink;
+}
+
+.avatar {
+  height: 240px; 
+  width: 240px;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 18px;
+  color: rgb(102,  102, 102);
+}
+
+.followers {
+  font-size: 30px;
+  color: black;
+}
+
+.following {
+  font-size: 30px;
+  color: blue;
+}
+
+.containerMid {
+float: right;
+width: 730px;
+height: auto;
+}
+
+.containerRight {
+  width: 730px;
+  float: right;
+  border: 1px solid red;
+}
+.repo {
+  color: green;
+  width: 300px;
+  height: auto;
+  border: 1px solid green;
+  float: left;
+}
+
+.update {
+  width: 200px;
+}
+
+.apiRight {
+  width: 200px;
+  color: rgb(136,  136, 136);
+  float: right;
+  border: 1px solid black;
+  text-align: right;
+}
+
+
+.footer {
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid orange;
+
+}
+
+.footerLeft {
+  float: left;
+  width: 200px;
+  height: 100px;
+  border: 1px solid green;
+}
+
+.footerRight {
+  float: right;
+  width: 200px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.line {
+  border-bottom: 1px solid #dcdcdc;
+  height: 42px;
+  overflow: hidden;
+
+
+}
+
+#mytabs {
+  float: left;
+
+.tabs { 
+  list-style: none; 
+  float: left;
+  padding: 0;
+
+  li { 
+    display: inline; 
+  }
+
+    a { 
+    display: inline-block; 
+    float: left; 
+    padding: 4px 8px; 
+    color: rgb(116,  116, 116) ;
+
+    margin: 0 0 0 -1px; 
+    text-decoration: none;
+    border-bottom: 1px solid rgb(220, 220, 220 );
+    }
+
+      a.current { 
+      border-bottom: 0; 
+      border-top: 1px solid rgb(220, 220, 220 );
+      border-left: 1px solid rgb(220, 220, 220 );
+      border-right:1px solid rgb(220, 220, 220 );
+      border-radius: 5px 5px 0 0;
+      color: rgb(31, 31,  31);
+     }
+  }
+}
+.box-wrapper { 
+  -moz-box-shadow: 0 0 20px black; 
+  -webkit-box-shadow: 0 0 20px black; 
+  padding: 20px; background: white; 
+  border: 1px solid #ccc; 
+  margin: -1px 0 0 0; 
+  height: 210px; 
+  position: relative; }
+
+
+
+
+//new element trying out
+
+
+.containerMid2 {
+  width: 730px;
+  height: auto;
+  float: right;
+}
+
+  #searchBox {
+  width: 275px;
+  padding: 13px 10px 10px 0px;
+  float: left;
+    #search {
+      font-size: 18px;
+      border-radius: 5px;
+      color: rgb(107, 103, 103); 
+      border: 1px solid #CEC8C8;
+    }
+}
+
+#button1:hover {
+  background-color: rgb(228, 228, 228 );
+}
+
+
+#button1 {
+  background-color: rgb(243, 243, 243 );
+  border-radius: 5px;
+  border: 1px solid #CEC8C8;
+}
+
+.searchBoxNav {
+  width: 325px;
+  float: left;
+  list-style: none;
+  padding: 0 0 0 25px;
+    li {
+      display: inline-block;
+      margin-right: 5px;
+        .default {
+          color: black;
+          font-weight: bold;
+        }
+        a {
+          text-decoration: none;
+          color: rgb(65, 131, 196);
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+    }
+}
+
+
+.book {
+    font-size: 14px;
+    padding: 8px 9px 8px 14px;
+    float: right;
+    margin-top: 8px;
+    background-color: #6bbc4f;
+    border: 1px solid #6bbc4f;
+    border-radius: 5px;
+    color: white;
+     
+          }
+.book:hover {
+  background-color:  #4AAC28;   
+}
+
+
+
+
+ 
