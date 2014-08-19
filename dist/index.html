@@ -17,177 +17,131 @@
 
    <div class="header">
       <div class="headercontent">
-
         <div class="headerLeft">
         <ul class="headerLeftNav">
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Gist</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Gist</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
         </div>
-
-
         <div class="headerRight">
-                 
-
-                <div class="headerNav">
-                  <span class="octicon octicon-plus"><a href="#" title="create new"></span></a>
-                  <span class="octicon octicon-triangle-down"></span>
-                  <span class="octicon octicon-tools"></span>
-                  <span class="octicon octicon-sign-out"></span>
-                </div>
-
-                   <div id="header"></div>
-
-
-
-        </div>
-    
-      
+          <div class="headerNav">
+            <span class="octicon octicon-plus"><a href="#" title="create new"></span></a>
+            <span class="octicon octicon-triangle-down"></span>
+            <span class="octicon octicon-tools"></span>
+            <span class="octicon octicon-sign-out"></span>
+          </div>
+          <div id="header"></div>
+        </div>  
    </div>
 
-        <div class="container">
-
-          <div class="containerLeft">
-
-            <div id="sidebar"></div>
-              
+    <div class="container">
+      <div class="containerLeft">
+        <div id="sidebar"></div>
+      </div>
+      <div class="containerMid">
+           <div id="mytabs">
+            <ul class="tabs">
+              <li><a href="#"><span class="octicon octicon-diff-added">&nbsp&nbspContribution</span></a></li>
+              <li><a href="#"><span class="octicon octicon-repo">&nbsp&nbspRepositories</span></a></li>
+              <li><a href="#"><span class="octicon octicon-rss">&nbsp&nbspPublic Acitivity</span></a></li>
+            </ul>
+          </div>  
+          <div class="line">
           </div>
-
-
-            <div class="containerMid">
-
-               <div id="mytabs">
-                <ul class="tabs">
-                  <li><a href="#"><span class="octicon octicon-diff-added">&nbsp&nbspContribution</span></a></li>
-                  <li><a href="#"><span class="octicon octicon-repo">&nbsp&nbspRepositories</span></a></li>
-                  <li><a href="#"><span class="octicon octicon-rss">&nbsp&nbspPublic Acitivity</span></a></li>
-                </ul>
-              </div>  
-
-              <div class="line">
-              </div>
-
-          </div>
-
-          <div class="containerMid2">
-            
-            <div id="searchBox">
-
-                <input id="search" type="text"  placeholder="Find a repository....">
-                
-                <input id="button1" type="submit" name="button1" value="Search">
-            </div>
-
-                <ul class="searchBoxNav">
-                    <li><a class="default" href="#">All</a></li>
-                    <li><a href="#">Public</a></li>
-                    <li><a href="#">Private</a></li>
-                    <li><a href="#">Sources</a></li>
-                    <li><a href="#">Forks</a></li>
-                    <li><a href="#">Mirrors</a></li>
-                </ul>
-                
-                <button class="book"><span class="octicon octicon-repo primary"></span>&nbsp&nbspNew</button>
-                
-          </div>
-
-          <div class="containerRight">
-
-              <div id="sidebar2"></div>
-
-          </div>
-
-        </div>
-
-
-      <div class="footer">
-        <div class="footerContent">
-         <ul class="footerRight">
-            <li><a href="#">Status</a></li>
-            <li><a href="#">API</a></li>
-            <li><a href="#">Training</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-         </ul>
-
-    <a href="/">
-      <span id="mega" class="mega-octicon octicon-mark-github" title="GitHub"></span>
-    </a>
-
-         <ul class="footerLeft">
-            <li class="github">© 2014 GitHub Inc.</li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-       </div> 
       </div>
 
- 
-    <script type="text/template" id="sidebar_template">
+      <div class="containerMid2">
+        <div id="searchBox">
+          <input id="search" type="text"  placeholder="Find a repository....">
+          <input id="button1" type="submit" name="button1" value="Search">
+        </div>
+            <ul class="searchBoxNav">
+              <li><a class="default" href="#">All</a></li>
+              <li><a href="#">Public</a></li>
+              <li><a href="#">Private</a></li>
+              <li><a href="#">Sources</a></li>
+              <li><a href="#">Forks</a></li>
+              <li><a href="#">Mirrors</a></li>
+            </ul>
+            <button class="book"><span class="octicon octicon-repo primary"></span>&nbsp&nbspNew</button>
+      </div>
 
-                <img class="avatar" src="<%= avatar_url %>" alt="<% name %>"/>
-                <div class="name"><%= login %></div>
-                <div class="followers">Followers </br><%= followers %></div>
-                <div class="following">Following </br><%= following %></div>
-                <div class="join">Joined on: <%= created_at %></div>
-              </script>
-              
-              <script type="text/template" id="header_template">
-                        <img class="avatar2" src="<%= avatar_url %>" alt="<%= name %>" />
-                        <a href="#" class="name2"><%= login %></a>
-                    </script> 
-              
+      <div class="containerRight">
+        <div id="sidebar2"></div>
+      </div>
+    </div>
 
+    <div class="footer">
+      <div class="footerContent">
+        <ul class="footerRight">
+          <li><a href="#">Status</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          </ul>
+          <a href="/">
+          <span id="mega" class="mega-octicon octicon-mark-github" title="GitHub"></span>
+          </a>
+       <ul class="footerLeft">
+          <li class="github">© 2014 GitHub Inc.</li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+     </div> 
+    </div>
+
+  <script type="text/template" id="sidebar_template">
+    <img class="avatar" src="<%= avatar_url %>" alt="<% name %>"/>
+    <div class="name"><%= login %></div>
+    <div class="followers">Followers </br><%= followers %></div>
+    <div class="following">Following </br><%= following %></div>
+    <div class="join">Joined on: <%= created_at %></div>
+  </script>
+  <script type="text/template" id="header_template">
+    <img class="avatar2" src="<%= avatar_url %>" alt="<%= name %>" />
+    <a href="#" class="name2"><%= login %></a>
+  </script> 
+              
   <!--if statement to see if fork symbol should be used or book. if not a fork file and javascript, use book. if not fork and css use book. if not fork and either language, use book. 
-
   if fork and javascript use fork symbol, if fork and css use form symbol if fork and either or still continue to use fork symbol-->
 
-             <script type="text/template" id="sidebar2_template">
+<script type="text/template" id="sidebar2_template">
+<div class="repo">
+  <% if(fork == false) { %>
+  <% if(language == 'JavaScript') { %>
+  <span class="mega-octicon octicon-repo"></span>
+  <% } else if(language == 'CSS') { %>  
+  <span class="mega-octicon octicon-repo"></span>     
+  <% } else { %>
+  <span class="mega-octicon octicon-repo"></span> 
+  <% } %>
 
-                <div class="repo">
-       <% if(fork == false) { %>
-            <% if(language == 'JavaScript') { %>
-              <span class="mega-octicon octicon-repo"></span>
-            <% } else if(language == 'CSS') { %>  
-              <span class="mega-octicon octicon-repo"></span>     
-            <% } else { %>
-            <span class="mega-octicon octicon-repo"></span> 
-            <% } %>
+  <% } else { %>
+  <% if(language == 'JavaScript') { %>
+  <span class="mega-octicon octicon-repo-forked"></span>
+  <% } else if(language == 'CSS') { %>  
+  <span class="mega-octicon octicon-repo-forked"></span>            
+  <% } else { %>        
+  <span class="mega-octicon octicon-repo-forked"></span>
+  <% } %>  
+  <% } %>              
+  <span class="name"><%= name %></span></br>
+  <span class="update"><%= updated_at %></span>
 
-            <% } else { %>
-            <% if(language == 'JavaScript') { %>
-              <span class="mega-octicon octicon-repo-forked"></span>
-            <% } else if(language == 'CSS') { %>  
-              <span class="mega-octicon octicon-repo-forked"></span>            
-            <% } else { %>        
-              <span class="mega-octicon octicon-repo-forked"></span>
-            <% } %>  
-        <% } %>              
-                  <span class="name"><%= name %></span></br>
-                  <span class="update"><%= updated_at %></span>
-
-                  <div class="apiRight">
-                  <%= language %>
-                  <span class="octicon octicon-star">
-                  <%= stargazers_count %></span>
-                  <span class="octicon octicon-git-branch"><%= forks %></span>  
-                  </div>
-                </div>
-               
-
-               
-                  
-           
-                
-                
-
-              </script>
+  <div class="apiRight">
+    <%= language %>
+    <span class="octicon octicon-star">
+    <%= stargazers_count %></span>
+    <span class="octicon octicon-git-branch"><%= forks %></span>  
+  </div>
+</div>                  
+</script>
         
 
     <script src="scripts/vendor.js"></script>
