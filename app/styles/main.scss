@@ -1,18 +1,18 @@
-
 @import 'bourbon/bourbon';
 
-
 body {
-  background: #fafafa;
+  background: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333; }
+  color: #333; 
+  margin: 0 auto;
+  width: 1000px;
+}
 
 //change header soon, when tweaking
 .header {
-  background-color: rgb(245, 245, 245); 
+  background-color: #fff; 
   width: 100%;
   height: auto;
-  //border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -26,10 +26,9 @@ body {
 }
 
 .headerLeft {
-  border:1px solid red;
+  // border:1px solid red;
   width: 510px;
   height: 40px;
- // border: 1px solid red;
   float: left;
 }
 
@@ -51,7 +50,7 @@ body {
 }
 
 #header {
-  width: 110px;
+  width: 130px;
   float: right;
   padding-top: 12px;
 }
@@ -64,6 +63,9 @@ body {
 
 .name2 {
   float: right;
+  margin: 6px 20px 0 0;
+    text-decoration: none;
+    color: #4183c4;
 }
 
 .headerNav {
@@ -74,9 +76,8 @@ body {
 .container {
   padding-top: 25px;
   width: 1000px;
-  height: 670px;
   margin: 0 auto;
-  border: 1px solid green;
+
 }
 
 .containerLeft {
@@ -92,9 +93,12 @@ body {
 
 .name {
   font-size: 18px;
-  color: rgb(102,  102, 102);
+  color: rgb(65, 131, 196 );
 }
 
+#name {
+  color: #bbb;
+}
 .followers {
   font-size: 30px;
   color: black;
@@ -114,51 +118,36 @@ height: auto;
 .containerRight {
   width: 730px;
   float: right;
-  border: 1px solid red;
-}
-.repo {
-  color: green;
-  width: 300px;
-  height: auto;
-  border: 1px solid green;
-  float: left;
+    ul {
+      list-style: none;
+    }
 }
 
-.update {
-  width: 200px;
+
+
+.repo {
+  width: 730px;
+  height: auto;
+  float: left;
+  list-style: none;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px solid #eee;
+    .update {
+     color: rgb(149, 149, 149);
+     margin-left: 25px;
+    font-size: 12px;
+  }
 }
 
 .apiRight {
   width: 200px;
   color: rgb(136,  136, 136);
   float: right;
-  border: 1px solid black;
   text-align: right;
+  margin: -10px 0px 11px 0px;
 }
 
 
-.footer {
-  width: 1000px;
-  height: 100px;
-  margin: 0 auto;
-  padding: 0;
-  border: 2px solid orange;
-
-}
-
-.footerLeft {
-  float: left;
-  width: 200px;
-  height: 100px;
-  border: 1px solid green;
-}
-
-.footerRight {
-  float: right;
-  width: 200px;
-  height: 100px;
-  border: 1px solid red;
-}
 
 .line {
   border-bottom: 1px solid #dcdcdc;
@@ -204,7 +193,7 @@ height: auto;
 .box-wrapper { 
   -moz-box-shadow: 0 0 20px black; 
   -webkit-box-shadow: 0 0 20px black; 
-  padding: 20px; background: white; 
+  padding: 20px; background: #fff; 
   border: 1px solid #ccc; 
   margin: -1px 0 0 0; 
   height: 210px; 
@@ -220,6 +209,7 @@ height: auto;
   width: 730px;
   height: auto;
   float: right;
+  border-bottom: 1px solid #959595;
 }
 
   #searchBox {
@@ -283,7 +273,68 @@ height: auto;
   background-color:  #4AAC28;   
 }
 
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0 0 0       ;
+  clear: both;
+  
+}
 
+.footerContent {
+  height: 55px;
+  width: auto;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+.footerLeft {
+  float: left;
+  width: 495px;
+  height: 100px;
+  list-style: none;
+  display: inline-block;
+  font-size: 12px;
+    li, a {
+      float: left;
+      display: inline-block;
+      margin-left: 5px;
+      text-decoration: none;
+      font-size: 12px;
+      color: #4183c4;
+    }
+    :hover {
+      text-decoration: underline;
+    }
+}
+
+#mega {
+  margin-left: -12px;
+  font-size: 24px;
+  color: #ccc;
+  &:hover {
+    color: #aaa;
+  }
+}
+
+
+.footerRight {
+  float: right;
+  width: 400px;
+  height: 100px;
+  list-style: none;
+  display: inline-block;
+  font-size: 12px;
+  a {
+    float: right;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #4183c4;
+  }
+  :hover {
+      text-decoration: underline;
+    }
+
+}
 
 
  
